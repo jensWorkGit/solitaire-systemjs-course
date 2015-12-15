@@ -1,5 +1,4 @@
-angular.module("klondike.scoring", [])
-    .service("scoring", [Scoring]);
+
 
 function Scoring() {
     this.score = 0;
