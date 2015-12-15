@@ -1,6 +1,4 @@
-
-
-function Scoring() {
+export function Scoring() {
     this.score = 0;
 
     this.newGame = function () {
