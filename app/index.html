@@ -31,6 +31,9 @@
         transpiler: "babel",
         map: {
             "babel": "../node_modules/babel-core/browser.js"
+        },
+        babelOptions: {
+            stage: 0
         }
     })
     System.import("app.js");
