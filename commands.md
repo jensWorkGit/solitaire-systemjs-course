@@ -3,3 +3,6 @@
 
 bower install es6-module-loader --save
 bower install traceur --save
+
+# to show an uml diagram (use in the chrome console)
+showModuleRelationships()
