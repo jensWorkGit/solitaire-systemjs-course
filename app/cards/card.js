@@ -1,8 +1,4 @@
-/**
- * Created by jhoffmann on 16.12.2015.
- */
-
-function Card(card) {
+export default function Card(card) {
     this.suit = card.suit;
     this.rank = card.rank;
     this.image = (Card.ranksInImagesOrder.indexOf(this.rank) * 4 + Card.suitsInImagesOrder.indexOf(this.suit) + 1) + ".png";
