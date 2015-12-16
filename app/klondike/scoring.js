@@ -13,9 +13,7 @@ function scoreForMoving(source, destionation) {
 }
 
 export class Scoring {
-    constructor() {
-        this.score = 0;
-    }
+    score = 0;
 
     newGame() {
         this.score = 0;
