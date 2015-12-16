@@ -22,7 +22,6 @@
 <script src="klondike/piles/remainderPile.js"></script>
 <script src="klondike/piles/tableauPile.js"></script>
 <script src="klondike/piles/foundationPile.js"></script>
-
 <script src="cards/cards.js"></script>
 
 <script>
@@ -31,6 +30,9 @@
         transpiler: "babel",
         map: {
             "babel": "../node_modules/babel-core/browser.js"
+        },
+        babelOptions: {
+            stage: 0
         }
     })
     System.import("app.js");
