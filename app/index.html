@@ -28,7 +28,10 @@
 <script>
     System.config({
         baseURL: "/app",
-        transpiler: "../node_modules/babel-core/browser.js"
+        transpiler: "babel",
+        map: {
+            "babel": "../node_modules/babel-core/browser.js"
+        }
     })
     System.import("app.js");
 </script>
