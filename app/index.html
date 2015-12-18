@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="klondike/game.css">
     <script src="bower_components/system.js/dist/system.js"></script>
-    <script src="lib/system.tap.js"></script>
+    <script src="config.js"></script>
     <script src="lib/system.yuml.js"></script>
 </head>
 <body>
@@ -24,15 +24,6 @@
 <script src="klondike/piles/foundationPile.js"></script>
 
 <script>
-    System.config({
-        transpiler: "babel",
-        map: {
-            "babel": "../node_modules/babel-core/browser.js"
-        },
-        babelOptions: {
-            stage: 0
-        }
-    })
     System.import("app.js");
 </script>
 
