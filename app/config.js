@@ -6,14 +6,16 @@ System.config({
         "optional": [
             "runtime",
             "optimisation.modules.system"
-        ]
+        ],
+        stage: 0
     },
     paths: {
         "github:*": "jspm_packages/github/*",
         "npm:*": "jspm_packages/npm/*"
     },
-
     map: {
+        "card": "cards/card.js",
+        "deck": "cards/deck.js",
         "babel": "npm:babel-core@5.8.34",
         "babel-runtime": "npm:babel-runtime@5.8.34",
         "core-js": "npm:core-js@1.2.6",
