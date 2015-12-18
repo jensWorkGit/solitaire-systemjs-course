@@ -1,3 +1,4 @@
+/app/jspm_packages
 logs/*
 !.gitkeep
 node_modules/
