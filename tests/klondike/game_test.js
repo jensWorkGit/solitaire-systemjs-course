@@ -1,3 +1,6 @@
+import Card from "card";
+import Deck from "deck";
+
 describe("A game of klondike", function () {
   "use strict";
 
