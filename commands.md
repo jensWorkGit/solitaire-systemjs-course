@@ -75,6 +75,12 @@ or use it like that:
 # using a plugin in the javascript file 
 import cardTemplate from "../cards/card.html!text";
 
+# install the jspm image plugin 
+jspm install image
+
+# install the jspm css plugin
+jspm install css
+
 
 
 
