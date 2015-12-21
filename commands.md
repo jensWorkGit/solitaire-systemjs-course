@@ -60,4 +60,7 @@ or use it like that:
 # creating a self executing bundle with jspm
 >jspm bundle-sfx app.js app/app.bundle.js --inject 
 
+# caching modules
+>jspm depcache app.js
+
 

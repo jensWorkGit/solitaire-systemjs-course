@@ -2,51 +2,12 @@ System.config({
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
-    "optional": [
-      "runtime",
-      "optimisation.modules.system"
-    ],
+    "optional": [],
     "stage": 0
   },
   paths: {
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
-  },
-  bundles: {
-    "app.bundle.js": [
-      "app.js",
-      "github:angular/bower-angular@1.4.7",
-      "klondike/klondike.js",
-      "github:fatlinesofcode/ngDraggable@0.1.8",
-      "klondike/game.js",
-      "klondike/board.js",
-      "github:fatlinesofcode/ngDraggable@0.1.8/ngDraggable",
-      "klondike/scoring.js",
-      "github:angular/bower-angular@1.4.7/angular",
-      "npm:underscore@1.8.3",
-      "cards/deck.js",
-      "klondike/piles/tableauPile.js",
-      "npm:babel-runtime@5.8.25/helpers/class-call-check",
-      "klondike/piles/remainderPile.js",
-      "klondike/piles/foundationPile.js",
-      "github:angular/bower-angular-route@1.4.7",
-      "npm:babel-runtime@5.8.25/helpers/create-class",
-      "cards/card.js",
-      "klondike/piles/pile.js",
-      "npm:underscore@1.8.3/underscore",
-      "github:angular/bower-angular-route@1.4.7/angular-route",
-      "npm:babel-runtime@5.8.25/core-js/object/create",
-      "npm:babel-runtime@5.8.25/core-js/object/define-property",
-      "npm:core-js@1.2.1/library/fn/object/define-property",
-      "npm:core-js@1.2.1/library/fn/object/create",
-      "npm:core-js@1.2.1/library/modules/$"
-    ],
-    "cards.bundle.js": [
-      "cards/deck.js",
-      "cards/card.js",
-      "npm:underscore@1.8.3",
-      "npm:underscore@1.8.3/underscore"
-    ]
   },
 
   map: {
