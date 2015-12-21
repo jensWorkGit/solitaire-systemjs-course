@@ -69,6 +69,9 @@ or use it like that:
 # get the packages from local
 >jspm setmode local
 
+# install the text plugin for jspm
+>jspm install text
+
 
 
 
