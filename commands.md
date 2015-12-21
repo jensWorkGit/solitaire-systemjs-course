@@ -13,3 +13,9 @@
 
 # installing babel
 > npm install -S babel-core@">=5.8.24 < 6.0"
+
+# installing underscore jspm
+> jspm install underscore
+
+# uninstall underscore from the bower file
+bower uninstall underscore --S
