@@ -64,6 +64,14 @@ or use it like that:
 >jspm depcache app.js
 
 # get the packages from remote
-jspm setmode remote
+>jspm setmode remote
+
+# get the packages from local
+>jspm setmode local
+
+
+
+
+
 
 
