@@ -14,6 +14,7 @@ System.config({
   },
 
   map: {
+    "md": "app/lib/markdown-plugin.js",
     "angular": "github:angular/bower-angular@1.4.7",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.7",
     "angular-route": "github:angular/bower-angular-route@1.4.7",
