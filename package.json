@@ -40,6 +40,7 @@
       "angular": "github:angular/bower-angular@^1.4.8",
       "angular-mocks": "github:angular/bower-angular-mocks@^1.4.8",
       "angular-route": "github:angular/bower-angular-route@^1.4.8",
+      "image": "github:systemjs/plugin-image@^0.1.0",
       "ngDraggable": "github:fatlinesofcode/ngDraggable@^0.1.8",
       "text": "github:systemjs/plugin-text@^0.0.4",
       "underscore": "npm:underscore@^1.8.3"

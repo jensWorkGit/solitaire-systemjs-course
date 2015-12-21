@@ -101,6 +101,7 @@ System.config({
     "card": "cards/card.js",
     "core-js": "npm:core-js@1.2.1",
     "deck": "cards/deck.js",
+    "image": "github:systemjs/plugin-image@0.1.0",
     "ngDraggable": "github:fatlinesofcode/ngDraggable@0.1.8",
     "text": "github:systemjs/plugin-text@0.0.4",
     "underscore": "npm:underscore@1.8.3",
