@@ -53,4 +53,8 @@ or use it like that:
 >jspm bundle app.js app/app.bundle.js --inject --minify
 >jspm bundle app.js app/app.bundle.js --inject --minify --no-mangle
 
+# jspm exclude files from a bundle
+>jspm bundle app.js - cards/*.js app/app.bundle.js --inject --minify 
+>jspm bundle cards/*.js app/cards.bundle.js --inject --minify 
+
 
