@@ -10,6 +10,64 @@ System.config({
     "npm:*": "jspm_packages/npm/*"
   },
 
+  depCache: {
+    "app.js": [
+      "github:angular/bower-angular@1.4.7",
+      "github:fatlinesofcode/ngDraggable@0.1.8",
+      "klondike/klondike.js"
+    ],
+    "github:angular/bower-angular@1.4.7": [
+      "github:angular/bower-angular@1.4.7/angular"
+    ],
+    "klondike/klondike.js": [
+      "github:angular/bower-angular@1.4.7",
+      "klondike/game.js",
+      "klondike/board.js",
+      "klondike/scoring.js"
+    ],
+    "github:fatlinesofcode/ngDraggable@0.1.8": [
+      "github:fatlinesofcode/ngDraggable@0.1.8/ngDraggable"
+    ],
+    "klondike/game.js": [
+      "github:angular/bower-angular@1.4.7",
+      "npm:underscore@1.8.3",
+      "cards/deck.js",
+      "klondike/piles/tableauPile.js",
+      "klondike/piles/remainderPile.js",
+      "klondike/piles/foundationPile.js"
+    ],
+    "klondike/board.js": [
+      "github:angular/bower-angular@1.4.7",
+      "github:angular/bower-angular-route@1.4.7"
+    ],
+    "github:fatlinesofcode/ngDraggable@0.1.8/ngDraggable": [
+      "github:angular/bower-angular@1.4.7"
+    ],
+    "klondike/piles/tableauPile.js": [
+      "klondike/piles/pile.js",
+      "npm:underscore@1.8.3"
+    ],
+    "npm:underscore@1.8.3": [
+      "npm:underscore@1.8.3/underscore"
+    ],
+    "cards/deck.js": [
+      "cards/card.js",
+      "npm:underscore@1.8.3"
+    ],
+    "klondike/piles/remainderPile.js": [
+      "klondike/piles/pile.js"
+    ],
+    "klondike/piles/foundationPile.js": [
+      "klondike/piles/pile.js"
+    ],
+    "github:angular/bower-angular-route@1.4.7": [
+      "github:angular/bower-angular-route@1.4.7/angular-route"
+    ],
+    "github:angular/bower-angular-route@1.4.7/angular-route": [
+      "github:angular/bower-angular@1.4.7"
+    ]
+  },
+
   map: {
     "angular": "github:angular/bower-angular@1.4.7",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.7",
