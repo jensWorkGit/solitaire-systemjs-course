@@ -22,3 +22,9 @@ bower uninstall underscore --S
 
 # installing packages via jspm
 jspm install angular angular-mocks angular-route
+
+# install dragable
+> jspm install github:fatlinesofcode/ngDraggable
+
+or use it like that: 
+> jspm install ngDraggable=github:fatlinesofcode/ngDraggable
