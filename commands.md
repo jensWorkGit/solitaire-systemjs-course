@@ -72,6 +72,8 @@ or use it like that:
 # install the text plugin for jspm
 >jspm install text
 
+# using a plugin in the javascript file 
+import cardTemplate from "../cards/card.html!text";
 
 
 
