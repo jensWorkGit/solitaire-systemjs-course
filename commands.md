@@ -48,4 +48,7 @@ jspm bundle app.js app/app.bundle.js
 # inject the bundle automatically so that it doesn't have to be put on the index.html page
 jspm bundle app.js app/app.bundle.js --inject
 
+# to unbundle 
+jspm unbundle 
+
 
