@@ -1,44 +1,44 @@
 System.trace = true;
 
 window.showModuleRelationships = function () {
-    var modules = Object.keys(System.loads)
-        .map(function (moduleName) {
-            return System.loads[moduleName];
-        });
-
-    function displayName(module) {
-        return module
-            .replace(System.baseURL, "");
-    }
-
-    var moduleDefinitions = modules.map(function (module) {
-        var name = displayName(module.name);
-        return "[" + name + "|" + module.metadata.format + "]";
+  var modules = Object.keys(System.loads)
+    .map(function (moduleName) {
+      return System.loads[moduleName];
     });
 
-    var dependencyDefinitions = [];
+  function displayName(module) {
+    return module
+      .replace(System.baseURL, "");
+  }
 
-    modules
-        .filter(function (module) {
-            return module.deps.length > 0;
+  var moduleDefinitions = modules.map(function (module) {
+    var name = displayName(module.name);
+    return "[" + name + "|" + module.metadata.format + "]";
+  });
+
+  var dependencyDefinitions = [];
+
+  modules
+    .filter(function (module) {
+      return module.deps.length > 0;
+    })
+    .forEach(function (module) {
+      var name = displayName(module.name);
+
+      var dependencies = module.deps
+        .map(function(dependency){
+          return System.normalizeSync(dependency, module.name, module.address);
         })
-        .forEach(function (module) {
-            var name = displayName(module.name);
-
-            var dependencies = module.deps
-                .map(function(dependency){
-                    return System.normalizeSync(dependency, module.name, module.address);
-                })
-                .map(displayName)
-                .map(function (dependencyName) {
-                    return "[" + name + "]->[" + dependencyName + "]"
-                });
-
-            dependencyDefinitions = dependencyDefinitions.concat(dependencies);
+        .map(displayName)
+        .map(function (dependencyName) {
+          return "[" + name + "]->[" + dependencyName + "]"
         });
 
-    var definitions = moduleDefinitions.concat(dependencyDefinitions);
+      dependencyDefinitions = dependencyDefinitions.concat(dependencies);
+    });
 
-    window.open("http://yuml.me/diagram/plain/class/" + definitions);
+  var definitions = moduleDefinitions.concat(dependencyDefinitions);
+
+  window.open("http://yuml.me/diagram/plain/class/" + definitions);
 
 };
