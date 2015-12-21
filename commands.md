@@ -28,3 +28,18 @@ jspm install angular angular-mocks angular-route
 
 or use it like that: 
 > jspm install ngDraggable=github:fatlinesofcode/ngDraggable
+
+# install babel
+npm install -g babel
+npm install -g babel-cli
+
+# Installing the babel presets
+npm install babel-preset-es2015
+
+babel app/app.js --out-file app.compiled.js
+babel app/app.js --out-file app.compiled.js --modules system
+
+babel --presets es2015 app/app.js --out-file app.compiled.js
+
+# jspm bundle
+jspm bundle app.js app/app.bundle.js
