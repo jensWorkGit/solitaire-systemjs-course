@@ -43,3 +43,8 @@ babel --presets es2015 app/app.js --out-file app.compiled.js
 
 # jspm bundle
 jspm bundle app.js app/app.bundle.js
+
+
+jspm bundle app.js app/app.bundle.js --inject
+
+
