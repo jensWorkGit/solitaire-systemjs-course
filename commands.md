@@ -19,3 +19,6 @@
 
 # uninstall underscore from the bower file
 bower uninstall underscore --S
+
+# installing packages via jspm
+jspm install angular angular-mocks angular-route

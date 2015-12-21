@@ -1,3 +1,4 @@
+import angular from "angular";
 import _ from "underscore";
 
 import Deck from "../cards/deck.js"
