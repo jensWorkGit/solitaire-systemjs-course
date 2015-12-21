@@ -57,4 +57,7 @@ or use it like that:
 >jspm bundle app.js - cards/*.js app/app.bundle.js --inject --minify 
 >jspm bundle cards/*.js app/cards.bundle.js --inject --minify 
 
+# creating a self executing bundle with jspm
+>jspm bundle-sfx app.js app/app.bundle.js --inject 
+
 
