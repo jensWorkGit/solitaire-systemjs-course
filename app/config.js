@@ -6,8 +6,8 @@ System.config({
     "stage": 0
   },
   paths: {
-    "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
+    "github:*": "https://github.jspm.io/*",
+    "npm:*": "https://npm.jspm.io/*"
   },
 
   depCache: {

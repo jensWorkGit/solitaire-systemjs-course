@@ -63,4 +63,7 @@ or use it like that:
 # caching modules
 >jspm depcache app.js
 
+# get the packages from remote
+jspm setmode remote
+
 
