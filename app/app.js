@@ -1,6 +1,5 @@
 import angular from "angular";
 import "ngDraggable";
-
 import "klondike/game.css!";
 import "klondike/klondike.js";
 
